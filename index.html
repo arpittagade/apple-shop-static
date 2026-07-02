@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Apple Store Concept — M5 Collection</title>
+  <meta name="description" content="A lightweight Apple-style shopping website built with only HTML, CSS and JavaScript." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <nav class="global-nav" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Apple Store Concept home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Store Concept</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>
+        <span></span><span></span>
+      </button>
+      <div class="nav-links" data-nav-links>
+        <a href="#mac">Mac</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#shop">Shop</a>
+        <a href="#ecosystem">Ecosystem</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <button class="bag-button" type="button" data-cart-open aria-label="Open bag">
+        <span>Bag</span>
+        <strong data-cart-count>0</strong>
+      </button>
+    </nav>
+  </header>
+
+  <div class="product-bar" data-product-bar>
+    <a href="#top" class="product-title">MacBook Air M5</a>
+    <div class="product-actions">
+      <a href="#highlights">Overview</a>
+      <a href="#shop">Shop</a>
+      <a href="#compare">Compare</a>
+      <a href="#faq">FAQ</a>
+      <a class="mini-buy" href="#shop">Buy</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <section id="top" class="hero section-pad" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Apple shopping concept</p>
+        <h1 id="hero-title">Light. Fast. Ready to shop.</h1>
+        <p class="hero-text">A clean Apple-style storefront for MacBook, iPhone, iPad, Watch, AirPods and Studio Display. Motion stays subtle, readable and mobile-friendly.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#shop">Shop products</a>
+          <a class="button secondary" href="#highlights">See highlights</a>
+        </div>
+        <p class="small-note">Static demo. Product data is editable in <code>script.js</code>.</p>
+      </div>
+      <div class="hero-visual" aria-label="MacBook Air M5 product image">
+        <div class="glow" aria-hidden="true"></div>
+        <img src="assets/hero-macbook-air-m5.webp" alt="MacBook Air floating open on a light background" fetchpriority="high" data-tilt-image />
+      </div>
+    </section>
+
+    <section id="highlights" class="highlights section-pad" aria-labelledby="highlight-title">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Highlights</p>
+          <h2 id="highlight-title">Get the highlights.</h2>
+        </div>
+        <button class="film-button" type="button" data-film-button>
+          <span class="play-dot" aria-hidden="true"></span>
+          Watch the film
+        </button>
+      </div>
+
+      <div class="carousel-shell reveal">
+        <button class="carousel-arrow prev" type="button" aria-label="Previous highlight" data-carousel-prev>‹</button>
+        <div class="highlight-track" data-highlight-track tabindex="0" aria-label="Product highlight cards">
+          <article class="highlight-card image-card dark-text">
+            <img src="assets/products/macbook-air-13.webp" alt="MacBook Air 13 inch" loading="lazy" />
+            <div class="highlight-copy top-left">
+              <span class="card-label">MacBook Air 13</span>
+              <h3>Thin enough to go everywhere.</h3>
+              <p>Built for study, coding, browsing and daily creative work.</p>
+            </div>
+          </article>
+          <article class="highlight-card image-card dark-text">
+            <img src="assets/products/macbook-air-15.webp" alt="MacBook Air 15 inch" loading="lazy" />
+            <div class="highlight-copy top-left">
+              <span class="card-label">MacBook Air 15</span>
+              <h3>More screen. Same clean feel.</h3>
+              <p>A larger canvas for multitasking without turning the UI heavy.</p>
+            </div>
+          </article>
+          <article class="highlight-card image-card dark-text">
+            <img src="assets/products/iphone-pro.webp" alt="iPhone Pro camera system" loading="lazy" />
+            <div class="highlight-copy top-left narrow">
+              <span class="card-label">iPhone Pro</span>
+              <h3>Pro camera. Premium finish.</h3>
+              <p>A compact product card built around strong imagery.</p>
+            </div>
+          </article>
+          <article class="highlight-card image-card light-text">
+            <img src="assets/products/apple-watch.webp" alt="Apple Watch fitness tracking" loading="lazy" />
+            <div class="highlight-copy top-left narrow">
+              <span class="card-label">Apple Watch</span>
+              <h3>Health and fitness, right on your wrist.</h3>
+            </div>
+          </article>
+          <article class="highlight-card image-card dark-text">
+            <img src="assets/products/studio-display.webp" alt="Studio Display desk setup" loading="lazy" />
+            <div class="highlight-copy top-left">
+              <span class="card-label">Studio Display</span>
+              <h3>Build a cleaner workspace.</h3>
+              <p>Mac, display and audio products presented as one ecosystem.</p>
+            </div>
+          </article>
+        </div>
+        <button class="carousel-arrow next" type="button" aria-label="Next highlight" data-carousel-next>›</button>
+      </div>
+    </section>
+
+    <section id="mac" class="mac-intro section-pad">
+      <div class="split reveal">
+        <div>
+          <p class="eyebrow">MacBook Air</p>
+          <h2>Built to go places.</h2>
+        </div>
+        <p>MacBook Air is light, thin and designed for daily work. This section keeps the large Apple-style product storytelling while using local compressed images.</p>
+      </div>
+      <div class="wide-image reveal">
+        <img src="assets/design-macbook-air.webp" alt="Two MacBook Air laptops open with colourful screens" loading="lazy" />
+      </div>
+      <div class="design-stack reveal">
+        <article>
+          <strong>13″</strong>
+          <span>Portable everyday size</span>
+        </article>
+        <article>
+          <strong>15″</strong>
+          <span>More room for multitasking</span>
+        </article>
+        <article>
+          <strong>M5</strong>
+          <span>Demo chip naming for this concept</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="shop" class="shop section-pad" aria-labelledby="shop-title">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Store</p>
+          <h2 id="shop-title">Shop Apple products.</h2>
+        </div>
+        <p class="section-subtitle">Product cards now use the images you uploaded. Filtering, quick details and bag logic are handled by plain JavaScript.</p>
+      </div>
+      <div class="filter-row reveal" aria-label="Product filters" data-filters></div>
+      <div class="product-grid" data-products></div>
+    </section>
+
+    <section id="ecosystem" class="ecosystem section-pad" aria-labelledby="ecosystem-title">
+      <div class="ecosystem-card reveal">
+        <div class="ecosystem-copy">
+          <p class="eyebrow">Ecosystem</p>
+          <h2 id="ecosystem-title">Everything works together.</h2>
+          <p>Mac for serious work. iPhone for daily capture. iPad for sketching. Watch for fitness. AirPods and Studio Display complete the desk setup.</p>
+          <a class="button secondary" href="#shop">Build your setup</a>
+        </div>
+        <div class="ecosystem-grid" aria-hidden="true">
+          <img src="assets/products/macbook-pro-14-thumb.webp" alt="" />
+          <img src="assets/products/ipad-air-thumb.webp" alt="" />
+          <img src="assets/products/airpods-pro-thumb.webp" alt="" />
+          <img src="assets/products/apple-watch-thumb.webp" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section id="compare" class="compare section-pad" aria-labelledby="compare-title">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Compare</p>
+          <h2 id="compare-title">Find the right product.</h2>
+        </div>
+      </div>
+      <div class="compare-table reveal" role="table" aria-label="Apple product comparison table">
+        <div class="row head" role="row">
+          <div role="columnheader">Product</div><div role="columnheader">Best for</div><div role="columnheader">Category</div><div role="columnheader">From</div>
+        </div>
+        <div class="row" role="row"><div>MacBook Air 13″</div><div>Students, travel, coding</div><div>Mac</div><div>₹99,900</div></div>
+        <div class="row" role="row"><div>MacBook Air 15″</div><div>More screen space</div><div>Mac</div><div>₹1,24,900</div></div>
+        <div class="row" role="row"><div>MacBook Pro 14″</div><div>Heavy creative and developer workloads</div><div>Mac</div><div>₹1,69,900</div></div>
+        <div class="row" role="row"><div>Studio Display</div><div>Desktop productivity setup</div><div>Display</div><div>₹1,59,900</div></div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq section-pad" aria-labelledby="faq-title">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Support</p>
+          <h2 id="faq-title">Frequently asked questions.</h2>
+        </div>
+      </div>
+      <div class="faq-list reveal" data-faq-list>
+        <article class="faq-item">
+          <button type="button" aria-expanded="false">I’m switching from a PC to a Mac. Is it easy to set up my new Mac and transfer my files?</button>
+          <div class="faq-panel"><div><p>Yes. Switching to Mac is simple and learning how to use Mac feels as easy as using your iPhone. If you already have an iPhone, bring it near your Mac and Setup Assistant can help sign you in to Wi‑Fi and your Apple Account. Migration Assistant can also transfer documents, apps, accounts and settings from a PC or an existing Mac.</p><p>Personal Setup gives free online, one-to-one sessions with a Specialist who can walk you through setup and show you how to make the most of your Mac.</p></div></div>
+        </article>
+        <article class="faq-item">
+          <button type="button" aria-expanded="false">Does Apple offer any special discounts or promotions to university students, parents and teachers?</button>
+          <div class="faq-panel"><div><p>Apple has an Education Store for students, parents and teachers. Eligible products may show education discounts, promotions or bundle deals. Verification can vary by country and may require an active university email or other documentation during checkout.</p></div></div>
+        </article>
+        <article class="faq-item">
+          <button type="button" aria-expanded="false">What are my delivery options, and when will I get my items?</button>
+          <div class="faq-panel"><div><p>Delivery options depend on your location, product availability and configuration. Many Mac configurations may be ready to ship or pick up, while customised selections can affect delivery estimates. Orders are generally shipped only within the country or region of purchase.</p></div></div>
+        </article>
+        <article class="faq-item">
+          <button type="button" aria-expanded="false">Can I connect my Mac to additional displays?</button>
+          <div class="faq-panel"><div><p>Yes. The number of additional displays depends on the Mac model, chip and display resolution.</p></div></div>
+        </article>
+        <article class="faq-item">
+          <button type="button" aria-expanded="false">What are my payment and financing options?</button>
+          <div class="faq-panel"><div><p>The demo checkout lists common options such as credit and debit cards, Net Banking, UPI, Payment on Delivery and EMI where eligible. Availability depends on product, location and financing terms.</p></div></div>
+        </article>
+        <article class="faq-item">
+          <button type="button" aria-expanded="false">What protection does AppleCare offer?</button>
+          <div class="faq-panel"><div><p>Every Mac includes a limited warranty and complimentary technical support. AppleCare+ extends coverage and adds accidental damage protection, subject to service fees and terms. Replace this demo copy with current official terms before using it in production.</p></div></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <aside class="cart-drawer" aria-hidden="true" data-cart-drawer>
+    <div class="cart-overlay" data-cart-close></div>
+    <section class="cart-panel" aria-label="Shopping bag">
+      <header>
+        <div>
+          <p class="eyebrow">Bag</p>
+          <h2>Your items</h2>
+        </div>
+        <button class="icon-button" type="button" aria-label="Close bag" data-cart-close>×</button>
+      </header>
+      <div class="cart-items" data-cart-items></div>
+      <footer>
+        <div class="total-line"><span>Subtotal</span><strong data-cart-total>₹0</strong></div>
+        <button class="button primary checkout" type="button" data-checkout>Continue to checkout</button>
+        <p class="small-note">Checkout is a front-end demo. Do not collect real payment details without a secure backend.</p>
+      </footer>
+    </section>
+  </aside>
+
+  <section class="detail-modal" aria-hidden="true" data-detail-modal aria-label="Product details">
+    <div class="modal-overlay" data-detail-close></div>
+    <article class="detail-card" data-detail-card></article>
+  </section>
+
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+
+  <footer class="footer section-pad">
+    <p>Unofficial static shopping UI built for learning. Not affiliated with Apple.</p>
+    <p>HTML + CSS + JavaScript only. No external libraries.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
